@@ -5,7 +5,7 @@ import {
   SelectValue,
   SelectContent,
   SelectItem,
-} from "@radix-ui/react-select";
+} from "./ui/select";
 import { useState, useEffect } from "react";
 
 interface Prompt {

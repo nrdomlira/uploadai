@@ -97,7 +97,7 @@ export function VideoInputForm(props: VideoInputFormProps) {
 
     setStatus("uploading");
 
-    const response = await api.post("/videos", data);
+    const response = await api.post("/video", data);
 
     const videoId = response.data.video.id;
 
@@ -124,7 +124,7 @@ export function VideoInputForm(props: VideoInputFormProps) {
     <form onSubmit={handleUploadVideo} className="space-y-4">
       <label
         htmlFor="video"
-        className="border flex rounded-md aspect-video cursor-pointer border-dashed text-sm flex-col gap-2 items-center justify-center text-muted-foreground hover:bg-primary/5"
+        className="relative border flex rounded-md aspect-video cursor-pointer border-dashed text-sm flex-col gap-2 items-center justify-center text-muted-foreground hover:bg-primary/5"
       >
         {previewURL ? (
           <video

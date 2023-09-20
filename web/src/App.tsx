@@ -92,7 +92,7 @@ export function App() {
               <Label>Prompt</Label>
               <PromptSelect onPromptSelected={setInput} />
             </div>
-            <div>
+            <div className="space-y-2">
               <Label>Modelo</Label>
               <Select disabled defaultValue="gpt3.5-turbo">
                 <SelectTrigger>
