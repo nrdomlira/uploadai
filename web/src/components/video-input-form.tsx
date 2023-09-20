@@ -169,7 +169,16 @@ export function VideoInputForm(props: VideoInputFormProps) {
             Carregar video
             <Upload className="w-4 h-4 ml-2" />
           </>
-        ) : statusMessages[status]}
+        ) : (
+          statusMessages[status]
+        )}{" "}
+<<<<<<<<< Temporary merge branch 1
+<<<<<<< HEAD
+=======
+        <Upload className="h-4 w-4 ml-2" />
+>>>>>>> c6aa3ef73eb1a2e81ad2cf158fc38030fe9d6797
+=========
+>>>>>>>>> Temporary merge branch 2
       </Button>
     </form>
   );
