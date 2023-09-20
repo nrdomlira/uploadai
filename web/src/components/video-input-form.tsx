@@ -172,6 +172,10 @@ export function VideoInputForm(props: VideoInputFormProps) {
         ) : (
           statusMessages[status]
         )}{" "}
+<<<<<<<<< Temporary merge branch 1
+        <Upload className="h-4 w-4 ml-2" />
+=========
+>>>>>>>>> Temporary merge branch 2
       </Button>
     </form>
   );
