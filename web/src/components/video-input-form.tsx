@@ -97,7 +97,11 @@ export function VideoInputForm(props: VideoInputFormProps) {
 
     setStatus("uploading");
 
+<<<<<<< HEAD
     const response = await api.post("/video", data);
+=======
+    const response = await api.post("/videos", data);
+>>>>>>> c6aa3ef73eb1a2e81ad2cf158fc38030fe9d6797
 
     const videoId = response.data.video.id;
 
@@ -172,6 +176,10 @@ export function VideoInputForm(props: VideoInputFormProps) {
         ) : (
           statusMessages[status]
         )}{" "}
+<<<<<<< HEAD
+=======
+        <Upload className="h-4 w-4 ml-2" />
+>>>>>>> c6aa3ef73eb1a2e81ad2cf158fc38030fe9d6797
       </Button>
     </form>
   );
